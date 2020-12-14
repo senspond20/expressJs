@@ -1,4 +1,4 @@
-import app from '../config/app'
+import app from '../config/app-config'
 import postsRoutes from '../routes/post'
 import testRoutes from '../routes/test'
 
