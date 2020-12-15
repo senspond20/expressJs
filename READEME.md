@@ -45,3 +45,10 @@ app.use(express.urlencoded( {extended : false } ));
 단, body-parser가 필요한 경우도 있다. body-parser는 
 JSON과 URL-encoded 형식의 본문 외에도 
 Raw, Text형식의 본문을 추가로 해석할 수 있다.
+
+
+```git
+    "ejs-lint": "^1.1.0",
+```
+
+https://simjaejin.tistory.com/31

@@ -1,0 +1,35 @@
+#cHead {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 50px;
+    border: 3px solid #eee;
+}
+#cFoot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 50px;
+}
+.item {
+    align-items: center;
+}
+.cTitle {
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: 2px solid #fff;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.cTitle span {
+    color: #fff;
+    display: block;
+}
+#title {
+    margin-top: 8px;
+}

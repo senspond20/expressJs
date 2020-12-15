@@ -1,0 +1,35 @@
+    <form id="frm" role="form" method="post" enctype="multipart/form-data" , action="view2.html">
+        <div class="container">
+
+            <div class="row">
+                <div id="cHead" class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><span>Write Content</span></div>
+            </div>
+            <div class="row">
+                <div class="cTitle col-lg-1 col-md-1 col-sm-1"><span>제목</span></div>
+                <div class="item col-lg-11 col-md-11 col-sm-11 col-xs-12">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="title" name="title" placeholder="title" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="cTitle col-lg-1 col-md-1 col-sm-1"><span>내용</span></div>
+                <div class="item col-lg-11 col-md-11 col-sm-11 col-xs-12">
+                    <div class="form-group">
+                        <textarea class="form-control" id="summernote" name="content" placeholder="content"
+                            maxlength="140" rows="7"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div id="cFoot" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <!-- 전송 버튼 -->
+                    <button class="btn btn-primary" onclick="submitContents(this)">저장</button>
+                    <button class="btn btn-info" type="button" id="cancel">취소</button>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <script src="/static/js/test.js"></script>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=title %></title>
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; 'unsafe-inline' nonce-2726c7f26c;"> -->
+    <meta http-equiv="Content-Security-Policy" 
+    content="default-src *; 
+            style-src 'self' http://* 'unsafe-inline'; 
+            script-src 'self' http://* 'unsafe-inline' 'nonce-2726c7f26c' 'unsafe-eval'" />
+            
+    <!-- <meta http-equiv="Content-Security-Policy" 
+        content="default-src *; 
+                style-src 'self' http://* 'unsafe-inline'; 
+                script-src 'self' http://* 'unsafe-inline' 'nonce-2726c7f26c' 'unsafe-eval'" /> -->
+    <!-- global css-->
+    
+    <link rel="stylesheet" href="/static/css/global.css">
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/bootstrap.3.3.5.js"></script>
+    <script src="/static/js/summernote.js"></script>
+    <!-- ejs css-select -->
+    <% if(style == 'writer') { %>
+        <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/summernote.css" rel="stylesheet">
+        <link rel="stylesheet" href="/static/css/writer.css">
+    <% }else if(style == 2) { %>
+
+    <% }else { %>
+
+    <% } %>
+</head>
+
+<body>
+
+    <header>
+        <%-include('./header') %>
+    </header>
+    <section>
+        <main>
+            <%-body %>
+        </main>
+    </section>
+    <footer>
+        <%-include('./footer') %>
+    </footer>
+    <script type="module" src="/static/js/main.js"></script>
+    <%- script %>
+</body>
+
+</html>

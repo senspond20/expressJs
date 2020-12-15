@@ -1,0 +1,22 @@
+<h2>GET 방식</h2>
+<form action=<%-formUrl %> method='GET'>
+    <label>제목 : </label><input type="text" name="title">
+    <label>내용 : </label><input type="text" name="content">
+    <input type="submit" value="전송">
+</form>
+
+<h2>POST 방식</h2>
+<form action=<%-formUrl %> method='POST'>
+    <label>제목 : </label><input type="text" name="title">
+    <label>내용 : </label><input type="text" name="content">
+    <input type="submit" value="전송">
+</form>
+
+<button id ="ddfdfd">클릭</button>
+<!-- <script src="/static/js/ttt.js"></script> -->
+
+<script type="text/javascript" nonce="sha256-jXi31yNd+ZgOvNiFWSW6YGx3uXpz1bpLrKeKF4oWYJ4=" >
+$('#ddfdfd').on('click',()=>{
+    alert('클릭했다')
+})
+</script>

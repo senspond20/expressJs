@@ -1,4 +1,4 @@
-import app from './middleware';
+import app from './middleware/router';
 import config from './config';
 
 const {PORT} = config;
