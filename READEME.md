@@ -1,15 +1,21 @@
 # express Setting
 
 ```json
-"dependencies": {
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "ejs": "^3.1.5",
     "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "express-upload": "^0.1.0",
     "helmet": "^4.2.0",
+    "helmet-csp": "^3.2.0",
     "hpp": "^0.2.3",
-    "multer": "^1.4.2"
+    "jquery": "^3.5.1",
+    "multer": "^1.4.2",
+    "multiparty": "^4.2.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.1",
@@ -22,6 +28,10 @@
     "nodemon": "^2.0.6"
   }
 ```
+
+# dependencies
+
+- 파일업로드 관련 (multer, multiparty)
 
 
 ```js

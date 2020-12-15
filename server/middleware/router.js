@@ -1,5 +1,4 @@
-import app from '../config/app-config.js'
-// import app from '../app'
+import app from './render'
 import indexRoutes from '../routes'
 import postsRoutes from '../routes/post'
 import pagesRoutes from '../routes/page'

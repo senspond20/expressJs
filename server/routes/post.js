@@ -15,7 +15,8 @@ router.get("/", (req,res)=>{
  @access public
 */
 router.post("/", (req,res)=>{
-    console.log(req.body);
+    const jsonBody = JSON.stringify(req.body)
+    console.log(jsonBody);
     res.json(req.body);
 });
 
