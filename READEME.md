@@ -62,3 +62,15 @@ Raw, Text형식의 본문을 추가로 해석할 수 있다.
 ```
 
 https://simjaejin.tistory.com/31
+
+
+
+```html
+<meta http-equiv="Content-Security-Policy" 
+      content="default-src 'self';  
+                script-src 'self' 'unsafe-inline'; 
+                style-src 'self' https://netdna.bootstrapcdn.com 
+                                https://cdnjs.cloudflare.com 
+                                'unsafe-inline';
+                img-src *;"  /> 
+```

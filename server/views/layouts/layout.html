@@ -5,14 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%=title %></title>
+     <!-- <meta http-equiv="Content-Security-Policy" 
+            content="default-src *;  script-src 'self' http://* 'unsafe-inline';"/>   -->
+
+     <!-- <meta http-equiv="Content-Security-Policy" 
+            content="default-src 'self';  
+                     script-src 'self' 'unsafe-inline'; 
+                     style-src 'self' https://netdna.bootstrapcdn.com 
+                                      https://cdnjs.cloudflare.com 
+                                      'unsafe-inline';
+                     img-src *;"  />  -->
+                     
     <link rel="stylesheet" href="/static/css/global.css">
     <script src="/static/js/jquery.min.js"></script>
     <script src="/static/js/bootstrap.3.3.5.js"></script>
     <script src="/static/js/summernote.js"></script>
     <!-- ejs css-select -->
     <% if(style == 'writer') { %>
-        <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
-        <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/summernote.css" rel="stylesheet">
+        <link href="https://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/summernote.css" rel="stylesheet">
         <link rel="stylesheet" href="/static/css/writer.css">
     <% }else if(style == 2) { %>
 
